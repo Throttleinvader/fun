@@ -10,7 +10,7 @@ It will ask the user what type of deck they wanna use and it will narrow down th
 
 ## In a paragraph or more, detail your project. What will your software do? What features will it have? How will it be executed?
 
-TODO
+My software would go straight into the options so that when you click on it a program should run 
 
 ## If planning to combine 1051's final project with another course's final project, with which other course? And which aspect(s) of your proposed project would relate to 1051, and which aspect(s) would relate to the other course?
 
@@ -36,4 +36,4 @@ The best outcome is to show the picture of all the cards and access the tcg rate
 
 ## In a paragraph or more, outline your next steps. What new skills will you need to acquire? What topics will you need to research? If working with one of two classmates, who will do what?
 
-TODO
+I need to learn how to get files from a website without it being illegal since I think that it is public information since I have the skill of file reading and in theory it shouldn't be too hard. But I think that the harder part is getting the picture from the file and adding it to the list. I may neeed to learn more visual aspects so that the program won't look too clumpy cause the best outcome would be that when you hover over the card so that you can read if you wanna add it to the deck. Another possible skill could be learning how to have type or click on teh options.
