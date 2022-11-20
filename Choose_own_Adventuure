@@ -1,6 +1,16 @@
 import random 
 
+print ("Welcome to the world of adventure noe choose what class you would like to be each class has there own advantages")
+
+choice = input("Archer" ,"Tamer","Caster", "Lancer")
+
 def abilities ():
 
 def damageroll ():
-math.radiant
+    math.radiant()
+    return damageroll
+
+def adventure()
+
+
+
