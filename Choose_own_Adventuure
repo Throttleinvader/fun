@@ -1,16 +1,165 @@
-import random 
+import random
 
-print ("Welcome to the world of adventure noe choose what class you would like to be each class has there own advantages")
+def playagain():
+    choice = input("Would you like to play again [Yes/No]")
+    if choice.lower() == "yes":
+        print("Awsome lets have another andventure")
+        Bedroom()
+    elif choice.lower() == "no":
+        print("Well sadly this is where we say goodbye")
+        
 
-choice = input("Archer" ,"Tamer","Caster", "Lancer")
+def search() :
+    return random.randint(1,2)
 
-def abilities ():
+def kill():
+    return random.randint(1,100)
 
-def damageroll ():
-    math.radiant()
-    return damageroll
+def breakin():
+    return random.randint(1,2)
 
-def adventure()
 
+
+        
+def Bedroom():
+    name = input("Hey there whats your name")
+    choice = input(print("hey there ", name ,"do you wanna wake up [Yes/No]"))
+    if choice.lower() == "yes":
+            print("awsome now we can have a real adventure, you wake up and realize that you have to go check something out ")
+            print("goes to hallway ")
+            Hallway()
+            
+    elif choice.lower() == "no":
+        choice = input ("are you sure [Yes/No]")
+        if choice.lower() == "yes":
+            print("You sleep for the rest of eternitys ")
+            print("YOU LOSE")
+            playagain()
+
+        elif choice.lower() == "no":
+            print("Well pick are you done yes or no!!")
+            if choice.lower() == "yes":
+                print("You sleep for the rest of eternity ")
+                playagain()
+
+            else:
+                print("awsome now we can have a real adventure, you wake up and realize that you have to go check something out ")
+                print("goes to hallway ")
+                Hallway()
+ 
+    else:
+        print("invalid answer")
+        Bedroom()
+        
+def Hallway():
+    choice = input( "While you were walking to the Bathroom ypu heat a noise and you notice that its really dark do you turn on the lights ")
+    if choice.lower()== "yes":
+        print("you see a horrific monster and die by decapitation")
+        playagain()
+
+    elif choice.lower() == "no":
+        print( "you remember the layout and head into the bathroom you close the door behind you and start to get ready")
+        choice = input( "do you wanna search the bathroom for something [Yes/No]")
+        if choice.lower() == "yes":
+            weapon = search()
+            
+            if weapon == 1:
+                print( "you found scissors")
+                choice = input( " a few mineuts pass and now your almost ready to leave but suddenly you hear a knock at the door do you wanna [attack or jump] out the window")
+                if choice.lower() == "jump":
+                    print ( "you safley jump out the window and start to run away, But you hear something chasing you ")
+                    Street()
+                    
+                
+                elif choice.lower() == "attack":
+                    if kill > 60:
+                        print('wow you killed the monster by stabbing it in the eyes multiple times, ummmm well that ends the game I mean there was way more story but its whatever thanks for playing')
+                    else:
+                        print('You sadly missed and died')
+                        playagain()
+
+        elif choice.lower == 'no':
+            choice = input('you hear a clawing at the door and open it YOU DIED wanna play again [yes/no] ':
+                  if choice == 'yes':
+                  playagain()
+
+                  elif choice == 'no':
+                      print('Thank you for playing')
+                    
+    
+            elif weapon == 2:
+                print("you found a towel")
+                choice = input( " a few mineuts pass and now your almost ready to leave but suddenly you hear a knock at the door do you wanna [attack or jump] out the window")
+                if choice.lower() == "jump":
+                    print ( "you safley jump out the window and start to run away, But you hear something chasing you ")
+                    Street()
+                    
+                
+                if choice.lower() == "attack":
+                    print("you attack the monster with a towel and die")
+                    playagain()
+
+        
+    
+def street():
+    choice = input("Do you wanna [run or hide]")
+    if choice == "run":
+        choice = print ('you keep runing and you see a house do you wanna turn and try to break in [Yes/No]')
+        if choice.lower() == 'yes':
+            breakin()
+            if item == 1:
+                print("you stumble on the floor and have found an axe in the fireplace")
+                choice = input("Do you wanna turn on the TV [yes/no]")
+                if choice == 'yes':
+                   print("There is apparently a monster on the loose and it is very dangerous to go outside")
+                   choice = input("Wait but why is this house empty shouldnt there be someone in here hey you have the choice do you wanna see if there is someone in here casue who leaves an open house [yes/no]")
+                   if choice.lower() == 'yes':
+                    print('you search around and hear somwone crying wanna check it out [yes/no]')
+                    if choice.lower()== 'yes':
+                             print("you find a little kid, wheres this kids parents are they dead or did they leave this kid alone to live")
+
+                    elif choice.lower()== 'no':
+                        print(' you start to hide so that you can jump the monster')
+    if choice.lower() == 'hide':
+        choice = input( 'you hide in a bush but the monster is getting closer do you stay [quiet or attack] with your weapon')
+        if choice.lower == 'attack'
+            if weapon == 1:
+                print("you killed the monster by a surprise attack by cutting its tendons YOU WINNNNN!!!!")
+            elif weapon == 2:
+                if kill > 80:
+                        print('wow you killed the monster by chocking it it was tough but you did it you lived , ummmm well that ends the game I mean there was way more story but its whatever thanks for playing')
+                    else:
+                        choice = input('You were overpowered and died, wanna play again [yes/no]')
+                        if choice.lower() == 'yes':
+                            playagain()
+                        elif choice.lower() == 'no':
+                            print( "Thanks for playing")
+                      
+                       
+            elif item == 2:
+                print("you found a gun in a room and wait for the monster by hiding in the closet")
+                choice = input("you hear the door open but the footsteps arent as loud as before do you peek to see who it is [yes/no]")
+                if choice.lower() == "yes":
+                    print ('you find a little kid and hide in the closet together')
+                    choice = input("you suddenly hear a large bang and see a monster what do you do [SHOOT/wait] hurry the monster won't wait")
+                    if choice.lower() == 'shoot':
+                        if kill > 30:
+                        choice = input('you shoot it in its leg and it falls in aggony do you [kill or spare]'):
+                            if choice.lower() == 'kill':
+                                print('you killed the monster and leave the house with the kid but then you hear a sudden growl from the KID!!!!!!!!!!!')
+                                print(' THANKS FOR PLAYING THAT ALL THE STORY WE HAVE FOR NOW ;]')
+                            elif choice.lower() == 'spare'
+                                print( 'The monster kills the kid then dies, you wonder why it killed the kid but you leave then you suddenly notice youre nails are turning black like the monsters')
+                                print(' You lived congradulations thanks for playing')
+
+                        elif choice.lower() == 'wait':
+                            print('The monster killed you both you and the kid')
+                            playagian()
+                        
+                 
+                   
+                   
+
+Bedroom ()
 
 
