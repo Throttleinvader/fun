@@ -2,15 +2,15 @@
 
 #### Your name
 
-TODO
+Connor Luttrell
 
 #### Your section leader's name
 
-TODO
+Connor Luttrell 
 
 #### Project title
 
-TODO
+Monster within / Final project 
 
 ***
 
@@ -18,12 +18,12 @@ Short answers for the below questions suffice. If you want to alter your plan fo
 
 #### What have you done for your project so far?
 
-TODO
+I have made an ending and multiple functions so that it won't seem too cluttered 
 
 #### What have you not done for your project yet?
 
-TODO
+I haven't added any file readings to where it shows an image to where it shows the image of where you are based on the functions 
 
 #### What problems, if any, have you encountered?
 
-TODO
+I have been encountering the same problem to where it won't work 100% of the time and doesn't print 
