@@ -2,7 +2,7 @@
 
 #### Your name
 
-Connor Luttrell
+Connor Luttrell ( Changed to choose own adventure)
 
 #### Your section leader's name
 
