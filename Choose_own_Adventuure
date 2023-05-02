@@ -21,12 +21,12 @@ def breakin():
 
 
         
-def Bedroom():
+def Stage():
     name = input("Hey there whats your name")
     choice = input(print("hey there ", name ,"do you wanna wake up [Yes/No]"))
     if choice.lower() == "yes":
-            print("awsome now we can have a real adventure, you wake up and realize that you have to go check something out ")
-            print("goes to hallway ")
+            print("awsome now we can have a real adventure, you wake up on a stage ")
+            print(" ")
             Hallway()
             
     elif choice.lower() == "no":
@@ -51,35 +51,35 @@ def Bedroom():
         print("invalid answer")
         Bedroom()
         
-def Hallway():
-    choice = input( "While you were walking to the Bathroom ypu heat a noise and you notice that its really dark do you turn on the lights ")
+def Backstage():
+    choice = input( "While you were walking to the back of the stage you see a shadow do you turn on the stage lights ")
     if choice.lower()== "yes":
-        print("you see a horrific monster and die by decapitation")
+        print("you see a stalker and die by STABBING")
         playagain()
 
     elif choice.lower() == "no":
-        print( "you remember the layout and head into the bathroom you close the door behind you and start to get ready")
-        choice = input( "do you wanna search the bathroom for something [Yes/No]")
+        print( "you remember the layout somehow and head into the dressing room, you close the door behind you and start to get ready for your preformance")
+        choice = input( "Do you wanna search the dressing room for something [Yes/No]")
         if choice.lower() == "yes":
             weapon = search()
             
             if weapon == 1:
-                print( "you found scissors")
-                choice = input( " a few mineuts pass and now your almost ready to leave but suddenly you hear a knock at the door do you wanna [attack or jump] out the window")
+                print( "you found a pen")
+                choice = input( " a few mineuts pass and now your almost ready to do your preformance but you hear a knock at the door do you wanna [attack or hide] in a closet")
                 if choice.lower() == "jump":
-                    print ( "you safley jump out the window and start to run away, But you hear something chasing you ")
-                    Street()
+                    print ( "you safley hide in the closet and start to hear footsteps before you decide to run away, But you hear something chasing you ")
+                    Crowd()
                     
                 
                 elif choice.lower() == "attack":
                     if kill > 60:
-                        print('wow you killed the monster by stabbing it in the eyes multiple times, ummmm well that ends the game I mean there was way more story but its whatever thanks for playing')
+                        print('wow you killed the murderer by stabbing it in the eyes multiple times, ummmm well that ends the game I mean there was way more story but its whatever thanks for playing')
                     else:
                         print('You sadly missed and died')
                         playagain()
 
         elif choice.lower == 'no':
-            choice = input('you hear a clawing at the door and open it YOU DIED wanna play again [yes/no] ':
+            choice = input('you hear a tapping at the door and open it YOU DIED wanna play again [yes/no] ':
                   if choice == 'yes':
                   playagain()
 
@@ -88,46 +88,47 @@ def Hallway():
                     
     
             elif weapon == 2:
-                print("you found a towel")
-                choice = input( " a few mineuts pass and now your almost ready to leave but suddenly you hear a knock at the door do you wanna [attack or jump] out the window")
-                if choice.lower() == "jump":
-                    print ( "you safley jump out the window and start to run away, But you hear something chasing you ")
-                    Street()
+                print("you found oil ")
+                choice = input( " a few mineuts pass and now your almost ready to leave but suddenly you hear a knock at the door do you wanna [attack or hide]in a closet ")
+                if choice.lower() == "hide":
+                    print ( "you safley hide in the closet and start to hear footsteps before you decide to run away, But you hear something chasing you ")
+                    Crowd()
                     
                 
                 if choice.lower() == "attack":
-                    print("you attack the monster with a towel and die")
+                    print("you attack the murderer with oil tp make it slip and die")
                     playagain()
 
         
     
-def street():
+def Crowd():
     choice = input("Do you wanna [run or hide]")
     if choice == "run":
-        choice = print ('you keep runing and you see a house do you wanna turn and try to break in [Yes/No]')
+        choice = print ('you keep runing and you see a booth do you wanna turn and try to break in [Yes/No]')
         if choice.lower() == 'yes':
             breakin()
             if item == 1:
                 print("you stumble on the floor and have found an axe in the fireplace")
-                choice = input("Do you wanna turn on the TV [yes/no]")
+                choice = input("Do you wanna turn on the popcorn machine [yes/no]")
                 if choice == 'yes':
-                   print("There is apparently a monster on the loose and it is very dangerous to go outside")
-                   choice = input("Wait but why is this house empty shouldnt there be someone in here hey you have the choice do you wanna see if there is someone in here casue who leaves an open house [yes/no]")
+                   print("The air starts to smell like butter")
+                   choice = input("Wait but why is this booth empty shouldnt there be someone in here since where at a concert do you want to look around? [yes/no]")
                    if choice.lower() == 'yes':
                     print('you search around and hear somwone crying wanna check it out [yes/no]')
                     if choice.lower()== 'yes':
-                             print("you find a little kid, wheres this kids parents are they dead or did they leave this kid alone to live")
+                             print("you find a little kid, wheres this kids parents  did they leave this kid alone so that they could see me preform ")
 
                     elif choice.lower()== 'no':
-                        print(' you start to hide so that you can jump the monster')
+                        print(' you start to hide so that you can jump the murderer')
+                        
     if choice.lower() == 'hide':
-        choice = input( 'you hide in a bush but the monster is getting closer do you stay [quiet or attack] with your weapon')
+        choice = input( 'you hide in a toliet stall but the murderer is getting closer do you stay [quiet or attack] with your weapon')
         if choice.lower == 'attack'
             if weapon == 1:
-                print("you killed the monster by a surprise attack by cutting its tendons YOU WINNNNN!!!!")
+                print("you killed the murderer by a surprise attack by stabbing its tendons with a pen YOU WINNNNN!!!!")
             elif weapon == 2:
                 if kill > 80:
-                        print('wow you killed the monster by chocking it it was tough but you did it you lived , ummmm well that ends the game I mean there was way more story but its whatever thanks for playing')
+                        print('wow you killed the murderer with oil it was tough but you did it you lived , ummmm well that ends the game I mean there was way more story but its whatever thanks for playing')
                     else:
                         choice = input('You were overpowered and died, wanna play again [yes/no]')
                         if choice.lower() == 'yes':
@@ -137,23 +138,23 @@ def street():
                       
                        
             elif item == 2:
-                print("you found a gun in a room and wait for the monster by hiding in the closet")
+                print("you found a gun under the cash register and wait for the murder by hiding in the frezzer")
                 choice = input("you hear the door open but the footsteps arent as loud as before do you peek to see who it is [yes/no]")
                 if choice.lower() == "yes":
-                    print ('you find a little kid and hide in the closet together')
-                    choice = input("you suddenly hear a large bang and see a monster what do you do [SHOOT/wait] hurry the monster won't wait")
+                    print ('you find a little kid and hide together')
+                    choice = input("you suddenly hear a large bang and see a murderer what do you do [SHOOT/wait] hurry the murderer won't wait")
                     if choice.lower() == 'shoot':
                         if kill > 30:
                         choice = input('you shoot it in its leg and it falls in aggony do you [kill or spare]'):
                             if choice.lower() == 'kill':
-                                print('you killed the monster and leave the house with the kid but then you hear a sudden growl from the KID!!!!!!!!!!!')
+                                print('you killed the murder and prefore at the concert with the kid!')
                                 print(' THANKS FOR PLAYING THAT ALL THE STORY WE HAVE FOR NOW ;]')
                             elif choice.lower() == 'spare'
-                                print( 'The monster kills the kid then dies, you wonder why it killed the kid but you leave then you suddenly notice youre nails are turning black like the monsters')
+                                print( 'The murderer kills the kid then dies, you wonder why they killed the kid but you leave then you suddenly notice youre about to be late to preform ')
                                 print(' You lived congradulations thanks for playing')
 
                         elif choice.lower() == 'wait':
-                            print('The monster killed you both you and the kid')
+                            print('The murderer killed you both you and the kid')
                             playagian()
                         
                  
